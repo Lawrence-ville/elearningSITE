@@ -1,0 +1,175 @@
+/* style for the secretary page*/*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --bg-color:#ffffff;
+    --text-color:#111111;
+    --main-color:#c8815f;
+    --big-font: 4.5rem;
+    --h2-font: 3.3rem;
+    --h3-font: 2rem;
+    --normal-font: 1rem;
+    }
+
+    img{
+        width: 50px;
+        height: 50px;
+        margin-left: 0px;
+    }
+.logo{
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: blue;
+}
+
+header{
+    width: 107%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 14%;
+    transition: all .35s ease;
+    }
+
+  
+    
+
+
+    .navlist {
+        display: flex;
+    }
+    
+    .navlist a {
+        color: var(--text-color);
+        font-weight: 600;
+        padding: 10px 25px;
+        font-size: var(--normal-font);
+        transition: all .36s ease;
+    }
+    
+    .navlist a:hover {
+        color: goldenrod;
+    }
+    
+    .header-icons i{
+        font-size: 32px;
+        color: var(--text-color);
+        margin-right: 20px;
+        transition: all .36s ease;
+    
+    }
+    .header-icons i:hover{
+        color: var(--main-color);
+    
+    }
+
+    header.sticky{
+        background: yellowgreen;
+        padding: 14px 14%;
+        box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+    }
+    body{
+        padding-top: 80px;
+        background-color: bisque;
+
+ 
+       
+    }
+
+    .name{
+        font-size: larger;
+        font-size: large;
+        color:rgb(0, 0, 0);
+
+
+    }
+ 
+    form{
+        display: inline-block;
+        align-items: center;
+        height: 190px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        background-color:lightseagreen;
+        margin-bottom: 2px;
+        position:absolute;
+        transform: translate();
+        top: 20%;
+        left: 28%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgb(0, 162, 255);
+        box-shadow: rgba(0, 0, 0, 0.2);
+    }
+
+    form p{
+        padding-top: 0px;
+        color: rgb(4, 21, 255);
+        font-size: 25px;
+        font-weight: 0;
+        letter-spacing: .5px;
+        text-align: center;
+        font-weight: bolder;
+        
+    }
+
+    ::placeholder{
+        color: black;
+       font-size: var(--h4-font);
+       padding-top: 3px;
+    }
+   
+    button{
+        margin-top: 20px;
+        margin-left:200px ;
+        width:30%;
+        background-color: aquamarine;
+        color: black;
+        padding: 18px 0;
+        font-size: 20px;
+        font-weight: 600;
+        border-radius: 15px;
+        cursor: grab;
+        background-color: rgb(24, 129, 228);
+        border-color: 2px solid rgb(0, 162, 255);
+        
+    }
+
+    button:hover {
+        background-color:gold;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      }
+
+
+
+
+      footer{
+    margin-top: 522px;
+        text-align: center;
+        background-color: aquamarine;
+    }
+    /*
+.full-page-image{
+    background-image: url(tibs\ logo.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 72px;
+    width: 50%;
+    height: 50%;
+}
+*/

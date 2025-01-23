@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="Viewport" content="width=device-width, initial-scale=1">
+        <title>THIKA INSTITUTE OF BUSINESS STUDIES</title>
+       <img src="tibs logo.png">
+        <link  rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=open+sans:weight@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?">
+    
+        <marquee><h3> You have logged out login again to continue</h3></marquee>
+    </head>
+   
+        
+    
+    <body>
+        
+        <div class="form-container">  
+    <form onsubmit="auth(); return false;">
+        
+        <p>TIBS COLLEGE</p>
+         <h3> Login </h3>
+         <label for="username">Username</label>
+         <input type="email" placeholder="Email" id="email" required>
+
+         <label for="password">Password</label>
+         <input type="password" placeholder="Password" id="password" required>
+         
+         <button type="submit"  onclick="auth()">LogIn </button>
+
+         <div class="last-text">
+            <p>Copyright @ 2024  All right reserved by CodeHive</p>
+            </div>
+    </form>
+</div> 
+
+<!-- The script below is used to handle the authentication process -->
+
+<script>
+    function auth() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if (email == "admin@gmail.com" && password == "12345") {
+            alert("Logging successful");
+            window.location.href = "students.html";
+        } else if (email == "sec@gmail.com" && password == "20001") {
+            alert("You are logged in as a Secretary, You can access your dashboard now.");
+            window.location.href = "sec.html";
+        } else if (email == "mrlawrence@gmail.com" && password == "20006") {
+            alert("Welcome Mr. Lawrence, You can access your dashboard now.");
+            window.location.href = "teacher.html";
+        } else {
+            alert("Invalid Username or Password");
+            return;
+        }
+    }
+</script>
+
+ </body>
+ 
+   
+
+    </html>
+    
+   
+
+
+   

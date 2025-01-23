@@ -1,0 +1,100 @@
+/*style for the help page*/
+/*style for the contact on the me page*/
+/*style for the contact dean page*/
+
+body{
+    background-color: rgba(78, 78, 245, 0.699);
+}
+
+
+
+img{
+    width: 60px;
+    margin-left: 0px;
+    padding-left: 0%;
+    height: 60px;
+}
+
+
+header{
+    padding-top:0px;
+    color: aqua;
+    position: top;
+    text-align: center;
+}
+
+textarea {
+    width: 90%;
+    height: 150px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+button{
+    margin-top: 20px;
+    margin-left:200px ;
+    width:15%;
+    background-color: whitesmoke;
+    color: black;
+    padding: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: grab;
+    border-color: 2px solid rgb(0, 162, 255);
+    
+}
+button:hover{
+    transform: translateY(-5px);
+    background: yellowgreen;
+
+} 
+footer {
+    background-color:rgba(78, 78, 245, 0.699); 
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    color: var(--text-color);
+    font-weight: 600;
+    padding: 10px 25px;
+    font-size: var(--normal-font);
+    transition: all .36s ease;
+}
+
+.navlist a:hover {
+    color: goldenrod;
+}
+
+.button{
+    margin-top: 50px;
+    margin-left:890px ;
+    width:15%;
+    background-color: aquamarine;
+    color: black;
+    padding: 18px 0;
+    font-size: 40px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: grab;
+    background-color: rgb(24, 228, 218);
+    border-color: 2px solid rgb(0, 162, 255);
+    text-decoration: none;
+    
+}
+.button:hover {
+    background-color: goldenrod;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  }

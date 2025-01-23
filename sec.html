@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="Viewport" content="width=device-width, initial-scale=1">
+    <title>Secretary Page</title>
+    <link rel="stylesheet"  href="stylesec.css">
+   
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=open+sans:weight@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+
+</head>
+
+<!----header--------->
+<header class="sticky"> 
+     <img src="tibs logo.png">
+    <a href="#" class="logo">TIBS</a>
+  
+    <ul class="navlist">
+        <li><a href="#finance">Finance</a></li>
+        <li><a href="announce2.html">Announcements</a></li>
+        <li><a href="index.html">Log out</a></li>
+    </ul>
+<div class="header-icons">
+        <box-icon type='logo' name='unity'></box-icon>
+        
+    </div>
+
+    </header>
+    
+    <body>
+
+        <div class="name">
+        <h2>
+            Welcome Madam Nancy
+        </h2>
+        </div>
+
+        <div class="form-container">  
+            <form onsubmit="auth(); return false;">
+                
+                <p>TIBS COLLEGE</p>
+                 <label for="admission"><h2>Admission</h2></label>
+                 <input type="admission" placeholder="i.e 12345" id="admission" maxlength="5" style="width: 200px; height: 40px;" required>
+<br>
+                 <button type="submit"  onclick="auth()" > Proceed </button>
+        
+
+            </form>
+        </div> 
+
+<!-- The script below is used to handle the authentication process -->
+
+<script>
+    function auth(){
+        var admission = document.getElementById('admission').value;
+        if(admission == "10789"){
+            window.location.href = "std1.html";
+        } else if(admission == "11789"){
+            window.location.href = "std2.html";
+        }else if(admission == "10984"){
+            window.location.href = "std3.html";
+        }else if(admission == "10439"){
+            window.location.href = "std4.html";
+        }else if(admission == "10774"){
+            window.location.href = "std5.html";
+        }else if(admission == "11345"){
+            window.location.href = "std6.html";
+        }
+    }
+</script>
+
+
+<footer>
+    <p>All rights reserved by Codehive &copy; 2024. </p>
+</footer>
+
+    </body>
+   
+
+
+
+
+
+    </html>

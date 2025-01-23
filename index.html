@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THIKA INSTITUTE OF BUSINESS STUDIES</title>
+       <img src="tibslogo.jpg">
+        <link  rel="stylesheet" href="style.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=open+sans:weight@300;400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?">
+    
+    
+    </head>
+    <body>
+        
+        <div class="form-container">  
+    <form onsubmit="auth(); return false;">
+        
+        <p>TIBS COLLEGE</p>
+         <h3> Login </h3>
+         <label for="username">Username</label>
+         <input type="email" placeholder="Email" id="email" required>
+
+         <label for="password">Password</label>
+         <input type="password" placeholder="Password" id="password" required>
+         
+         <button type="submit"  onclick="auth()">LogIn </button>
+
+         <div class="last-text">
+            <p>Copyright @ 2024  All right reserved by CodeHive</p>
+            </div>
+    </form>
+</div> 
+
+<!-- The script below is used to handle the authentication process -->
+
+<script>
+    function auth() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+
+        if (email == "lawrence@gmail.com" && password == "20001") {
+            alert("Logging successful");
+            window.location.href = "students.html";
+        } else if (email == "jane@gmail.com" && password == "20001") {
+            alert("Logging successful");
+            window.location.href = "students2.html";
+        } else if (email == "joel@gmail.com" && password == "20001") {
+            alert("Logging successful");
+            window.location.href = "student3.html";
+        } else if (email == "joshua@gmail.com" && password == "20001") {
+            alert("Logging successful");
+            window.location.href = "student4.html";
+        } else if (email == "sadara@gmail.com" && password == "20001") {
+            alert("Logging successful");
+            window.location.href = "student5.html";
+        } else if (email == "brian@gmail.com" && password == "20001") {
+         alert("Logging successful");
+            window.location.href = "student6.html";
+
+        } else if (email == "sec@gmail.com" && password == "20002") {
+            alert("You are logged in as a Secretary, You can access your dashboard now.");
+            window.location.href = "sec.html";
+
+        } else if (email == "mrjohnson@gmail.com" && password == "20003") {
+            alert("Welcome Mr.Johnson");
+            window.location.href = "teacher.html";
+        } else if (email == "mrpaul@gmail.com" && password == "20003") {
+            alert("Welcome Mr. Paul");
+            window.location.href = "teacher2.html";
+        } else if (email == "mrsydney@gmail.com" && password == "20003") {
+            alert("Welcome Mr. Sydney");
+            window.location.href = "teacher3.html";
+            
+        } else {
+            alert("Invalid Username or Password");
+            return;
+        }
+    }
+</script>
+
+ </body>
+ 
+   
+
+    </html>
+    
+   
+
+
+   

@@ -1,0 +1,292 @@
+/*style for the teachers page*/
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans',sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+:root{
+    --bg-color:#ffffff;
+    --text-color:#111111;
+    --main-color:#c8815f;
+    --big-font: 4.5rem;
+    --h2-font: 3.3rem;
+    --h3-font: 2rem;
+    --normal-font: 1rem;
+    }
+
+header{
+    width: 107%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    position:fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 20px 14%;
+    transition: all .35s ease;
+    }
+
+          
+    .logo{
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:blue;
+}
+    
+        .navlist {
+            display: flex;
+        }
+        
+        .navlist a {
+            color: var(--text-color);
+            font-weight: 600;
+            padding: 10px 25px;
+            font-size: var(--normal-font);
+            transition: all .36s ease;
+        }
+        
+        .navlist a:hover {
+            color: goldenrod;
+        }
+        
+        .header-icons i{
+            font-size: 32px;
+            color: var(--text-color);
+            margin-right: 20px;
+            transition: all .36s ease;
+        
+        }
+        .header-icons i:hover{
+            color: var(--main-color);
+        
+        }
+    
+        header.sticky {
+            background: yellowgreen;
+            padding: 14px 14%;
+            box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+            
+        }
+    .btn{
+        display: inline-block;
+        padding: 13px 25px;
+        background: var(--main-color); 
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: all .35s ease;
+    }
+    
+    .btn:hover{
+        transform: translateY(-5px);
+        background: yellowgreen;
+    
+    } 
+/*
+    form{
+        display: inline-block;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 500px;
+        margin-bottom: 2px;
+        position:absolute;
+        transform: translate();
+        top: 32%;
+        left: 30%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgb(0, 162, 255);
+        box-shadow: rgba(0, 0, 0, 0.2);
+        
+    }
+
+    form h2{
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 10px;
+        text-align: center;
+    
+    }
+
+    section{
+        padding: 100px 14%;
+    
+    }
+*/
+
+
+    .enroll{
+        min-height: 100vh;
+        width:auto;
+        background-color:rgb(241, 208, 164);
+        background-position: center top;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .enroll-text h2{
+        color:goldenrod;
+        font-weight: 900;
+        line-height: 1.5;
+        
+        
+        
+    }
+
+    .enroll-text h1{
+        font-size: var(--big-font);
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: .6rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .enroll-text span{
+        font-size: var(--h2-font);
+    
+    }
+    
+    .enroll-text p{
+        font-size: var(--normal-font);
+        font-weight: 500;
+        margin-bottom: 3rem;
+        letter-spacing: .2rem;
+    }
+    
+    /*section lectures*/
+    .lectures{
+        min-height: 100vh;
+        width:auto;
+        background-color:rgb(241, 208, 164);
+        background-position: center top;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .lectures-text h2{
+        padding-top: 5%;
+        color: blue;
+        text-align: center;
+        font-size: var(--h2-font);
+         font-weight: 900;
+       
+        
+    }
+
+    .lectures-text h1{
+        font-size: var(--big-font);
+        font-weight: 800;
+        line-height: 1.2;
+        letter-spacing: .6rem;
+        margin-bottom: 1.4rem;
+    }
+
+    .lectures-text span{
+        font-size: var(--h2-font);
+    
+    }
+    
+    .lectures-text p{
+        font-size: var(--h3-font);
+        font-weight: bolder;
+        margin-bottom: 3rem;
+        letter-spacing: .2rem;
+        text-align: center;
+    }
+
+    table,th,td{
+        border:1px solid black;
+    }
+    
+    table{
+        width:80%;
+        height:115px;
+        margin-left: 140px;
+        margin-bottom: 2px;
+        
+    }
+    
+
+
+tr:hover{
+    background:lightblue;
+}
+
+/*section assignments*/
+.upload{
+    min-height: 100vh;
+    width:auto;
+    background-color:rgb(241, 208, 164);
+    background-position: center top;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+.upload-text h1{
+    font-size: var(--big-font);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .6rem;
+    margin-bottom: 1.4rem;
+}
+.upload-text h2{
+    padding-top: 5%;
+    color: blue;
+    text-align: center;
+    font-size: var(--h2-font);
+     font-weight: 900;
+   
+    
+}
+
+.upload-text h4{
+    font-size: var(--h4-font);
+     font-weight: 900;
+   
+    
+}
+.upload-text span{
+    font-size: var(--h2-font);
+
+}
+
+.upload-text p{
+    font-size: var(--h3-font);
+    font-weight: bolder;
+    margin-bottom: 3rem;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.my-submit-button {
+    background-color: #4CAF50; 
+    border-radius: 10%; 
+    color: white;
+    padding: 15px 32px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer;
+    margin-left: 50px;
+  }
+  .my-submit-button:hover{
+    background-color: goldenrod; 
+  }

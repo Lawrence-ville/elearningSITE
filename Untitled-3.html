@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LogIn</title>
+    <link href="/Content/allcss?v=YCOa59JACNW2XP41z-cdFnqJbhCGVxyXtqNYWbUhfzk1" rel="stylesheet"/>
+    <link  rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+    <div class="container">
+            
+
+
+<form action="/Default/LogIn" class="form-signin" method="post"><input name="__RequestVerificationToken" type="hidden" value="-CzWNKj1SRKdKSul9odZdNRtxRHkqZ-O4o9HP0wSh-crI21SIAPwuoq4EEsYLGYiPYdTewlrqb_0rjAzd1KckHuow6PKn3kzwxNArwreOSg1" />    <div class="form-signin-heading text-center">
+        <h1 class="sign-title">TIBS STUDENT PORTAL</h1>
+        <img src="tibs logo.png" alt="logo" />
+    </div>
+    <div class="login-wrap">
+        
+
+        <input class="form-control" data-val="true" data-val-required="The UserID field is required." id="AuthModel_Username" name="AuthModel.Username" placeholder="User ID" type="text" value="" />
+        <span class="field-validation-valid text-danger text-sm" data-valmsg-for="AuthModel.Username" data-valmsg-replace="true"></span>
+
+        <input class="form-control" data-val="true" data-val-required="The Password field is required." id="AuthModel_Password" name="AuthModel.Password" placeholder="Password" type="password" />
+        <span class="field-validation-valid text-danger text-sm" data-valmsg-for="AuthModel.Password" data-valmsg-replace="true"></span>
+
+        <input class="btn btn-sm btn-login btn-block" type="submit" value="SIGN IN">
+
+        <label class="checkbox">
+            <span class="pull-right">
+                <a data-toggle="modal" href="#myModal"> Forgot Password?</a>
+
+            </span>
+        </label>
+    </div>
+</form>
+<div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title">Forgot Password ?</h4>
+            </div>
+<form action="/Default/ForgotPassword" method="post"><input name="__RequestVerificationToken" type="hidden" value="Uc8bvxNqi-XsUWQSPqdzv9d93cpXK-xBdeC_sOepDAD4ImBGSMVuBUa_YMxX5h1ahgSoZSsryfi2Pmx3_EXgxbeIb1fIczRO1hlJ3Tu4wIQ1" />                <div class="modal-body">
+                    <p>Enter your e-mail address below to reset your password.</p>
+                    <input autocomplete="off" class="form-control placeholder-no-fix" data-val="true" data-val-email="The email address provided is Invalid." data-val-required="The Email field is required." id="ForgotPasswordModel_Email" name="ForgotPasswordModel.Email" type="text" value="" />
+                    <span class="field-validation-valid text-danger text-sm" data-valmsg-for="ForgotPasswordModel.Email" data-valmsg-replace="true"></span>
+
+                </div>
+                <div class="modal-footer">
+                    <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                    <input class="btn btn-primary" type="submit" name="submit"/>
+                </div>
+</form>        </div>
+    </div>
+</div>
+
+
+    </div>
+        <script src="/bundles/jquery?v=rD9yxcIfC-_zwpaJ_9UPbUY1Niam5dFE8OFiugxkBeM1"></script>
+
+        <script src="/bundles/bootstrap?v=ILwomNMIHYanmYeRDxspM79xaDxHY9QXY32LSjtl8t41"></script>
+
+        
+    <script src="/bundles/jqueryval?v=hEGG8cMxk9p0ncdRUOJ-CnKN7NezhnPnWIvn6REucZo1"></script>
+
+
+</body>
+</html>
